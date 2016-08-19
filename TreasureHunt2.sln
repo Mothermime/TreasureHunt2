@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreasureHunt2", "TreasureHunt2.csproj", "{3AFE4BFE-6524-439A-858F-F8CE93EABA24}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestTreasureHunt", "..\UnitTestTreasureHunt\UnitTestTreasureHunt.csproj", "{C962AD1C-FDCF-4FC2-B89C-CE9D110FF27E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3AFE4BFE-6524-439A-858F-F8CE93EABA24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AFE4BFE-6524-439A-858F-F8CE93EABA24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AFE4BFE-6524-439A-858F-F8CE93EABA24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C962AD1C-FDCF-4FC2-B89C-CE9D110FF27E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C962AD1C-FDCF-4FC2-B89C-CE9D110FF27E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C962AD1C-FDCF-4FC2-B89C-CE9D110FF27E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C962AD1C-FDCF-4FC2-B89C-CE9D110FF27E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -117,62 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="BlueBeard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BlueBeard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="tbInstructions.Text" xml:space="preserve">
+    <value>These Sovereigns are prepared to finance expeditions to add to their wealth by whatever means - scrupulous or not.
+They have heard there is priceless treasure buried on a far off island.  
+Each is looking for a captain and crew to sail there before anyone else does.
+They each have 50 hoards of gold to invest.
+
+</value>
   </data>
-  <data name="Pirate ship green edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pirate ship green edit.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="red edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\red edit.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pirate island  background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pirate island  background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GreenThmb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GreenThmb.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bluebeard 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bluebeard 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="yellow edit 4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\yellow edit 4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Yellow Belly 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Yellow Belly 2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Queen CupidityR" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Queen CupidityR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pirate island edit final edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pirate island edit final edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="YellowBellyedit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\YellowBellyedit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Redcoat 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Redcoat 2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Esurius 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Esurius 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="King Rapacity2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\King Rapacity2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="yellow edit 41" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\yellow edit 41.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Capt. Redcoat" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Capt. Redcoat.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Green Thiumb 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Green Thiumb 2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pirate ship blue edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pirate ship blue edit.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="chest with moths" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chest with moths.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
 </root>
