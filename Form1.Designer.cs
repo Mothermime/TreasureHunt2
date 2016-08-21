@@ -45,14 +45,13 @@
             this.pbGreen = new System.Windows.Forms.PictureBox();
             this.pbIsland = new System.Windows.Forms.PictureBox();
             this.gbBackers = new System.Windows.Forms.GroupBox();
-            this.pbRTreasureChest = new System.Windows.Forms.PictureBox();
-            this.pbETreasureChest = new System.Windows.Forms.PictureBox();
+            this.btnGameOver = new System.Windows.Forms.Button();
+            this.btnPlay = new System.Windows.Forms.Button();
+            this.tbInstructions = new System.Windows.Forms.TextBox();
             this.rbEsurience = new System.Windows.Forms.RadioButton();
             this.rbCupidity = new System.Windows.Forms.RadioButton();
             this.pbCTreasureChest = new System.Windows.Forms.PictureBox();
             this.rbRapacity = new System.Windows.Forms.RadioButton();
-            this.tbInstructions = new System.Windows.Forms.TextBox();
-            this.btnPlay = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pbCupidity = new System.Windows.Forms.PictureBox();
@@ -79,10 +78,11 @@
             this.flpRedCoat = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.flpYellowBelly = new System.Windows.Forms.FlowLayoutPanel();
-            this.flpGreenThumb = new System.Windows.Forms.FlowLayoutPanel();
             this.flpBluebeard = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pbRapacity = new System.Windows.Forms.PictureBox();
+            this.pbETreasureChest = new System.Windows.Forms.PictureBox();
+            this.pbRTreasureChest = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbBlue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbYellow)).BeginInit();
@@ -94,8 +94,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbGreen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbIsland)).BeginInit();
             this.gbBackers.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRTreasureChest)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbETreasureChest)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCTreasureChest)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -111,10 +109,13 @@
             this.flpBluebeard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRapacity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbETreasureChest)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRTreasureChest)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSetSail
             // 
+            this.btnSetSail.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnSetSail.Font = new System.Drawing.Font("Old English Text MT", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSetSail.Location = new System.Drawing.Point(548, 0);
             this.btnSetSail.Name = "btnSetSail";
@@ -130,6 +131,7 @@
             // 
             // btnReturn
             // 
+            this.btnReturn.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnReturn.Font = new System.Drawing.Font("Old English Text MT", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturn.Location = new System.Drawing.Point(548, 98);
             this.btnReturn.Name = "btnReturn";
@@ -250,11 +252,12 @@
             // 
             // pbIsland
             // 
+            this.pbIsland.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pbIsland.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbIsland.Image = global::TreasureHunt2.Properties.Resources.pirate_island_edit_final_edit;
-            this.pbIsland.Location = new System.Drawing.Point(360, 139);
+            this.pbIsland.Location = new System.Drawing.Point(369, 140);
             this.pbIsland.Name = "pbIsland";
-            this.pbIsland.Size = new System.Drawing.Size(539, 418);
+            this.pbIsland.Size = new System.Drawing.Size(531, 447);
             this.pbIsland.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbIsland.TabIndex = 33;
             this.pbIsland.TabStop = false;
@@ -262,6 +265,7 @@
             // gbBackers
             // 
             this.gbBackers.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.gbBackers.Controls.Add(this.btnGameOver);
             this.gbBackers.Controls.Add(this.btnPlay);
             this.gbBackers.Controls.Add(this.tbInstructions);
             this.gbBackers.Controls.Add(this.rbEsurience);
@@ -284,7 +288,6 @@
             this.gbBackers.Controls.Add(this.lblBluebeard);
             this.gbBackers.Controls.Add(this.flpRedCoat);
             this.gbBackers.Controls.Add(this.flpYellowBelly);
-            this.gbBackers.Controls.Add(this.flpGreenThumb);
             this.gbBackers.Controls.Add(this.flpBluebeard);
             this.gbBackers.Controls.Add(this.pbRapacity);
             this.gbBackers.Controls.Add(this.pbETreasureChest);
@@ -295,27 +298,41 @@
             this.gbBackers.TabIndex = 41;
             this.gbBackers.TabStop = false;
             // 
-            // pbRTreasureChest
+            // btnGameOver
             // 
-            this.pbRTreasureChest.Image = global::TreasureHunt2.Properties.Resources.chest_with_moths;
-            this.pbRTreasureChest.Location = new System.Drawing.Point(412, 489);
-            this.pbRTreasureChest.Name = "pbRTreasureChest";
-            this.pbRTreasureChest.Size = new System.Drawing.Size(136, 126);
-            this.pbRTreasureChest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbRTreasureChest.TabIndex = 102;
-            this.pbRTreasureChest.TabStop = false;
-            this.pbRTreasureChest.Visible = false;
+            this.btnGameOver.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnGameOver.Font = new System.Drawing.Font("Old English Text MT", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGameOver.Location = new System.Drawing.Point(616, 250);
+            this.btnGameOver.Name = "btnGameOver";
+            this.btnGameOver.Size = new System.Drawing.Size(193, 133);
+            this.btnGameOver.TabIndex = 103;
+            this.btnGameOver.Text = "Game over\r\nPlay again";
+            this.btnGameOver.UseVisualStyleBackColor = false;
+            this.btnGameOver.Visible = false;
+            this.btnGameOver.Click += new System.EventHandler(this.btnGameOver_Click);
             // 
-            // pbETreasureChest
+            // btnPlay
             // 
-            this.pbETreasureChest.Image = global::TreasureHunt2.Properties.Resources.chest_with_moths;
-            this.pbETreasureChest.Location = new System.Drawing.Point(412, 53);
-            this.pbETreasureChest.Name = "pbETreasureChest";
-            this.pbETreasureChest.Size = new System.Drawing.Size(136, 126);
-            this.pbETreasureChest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbETreasureChest.TabIndex = 100;
-            this.pbETreasureChest.TabStop = false;
-            this.pbETreasureChest.Visible = false;
+            this.btnPlay.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnPlay.Font = new System.Drawing.Font("Old English Text MT", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlay.Location = new System.Drawing.Point(635, 546);
+            this.btnPlay.Name = "btnPlay";
+            this.btnPlay.Size = new System.Drawing.Size(138, 64);
+            this.btnPlay.TabIndex = 92;
+            this.btnPlay.Text = "Begin";
+            this.btnPlay.UseVisualStyleBackColor = false;
+            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
+            // 
+            // tbInstructions
+            // 
+            this.tbInstructions.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbInstructions.Font = new System.Drawing.Font("Old English Text MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbInstructions.Location = new System.Drawing.Point(412, 54);
+            this.tbInstructions.Multiline = true;
+            this.tbInstructions.Name = "tbInstructions";
+            this.tbInstructions.Size = new System.Drawing.Size(419, 581);
+            this.tbInstructions.TabIndex = 81;
+            this.tbInstructions.Text = resources.GetString("tbInstructions.Text");
             // 
             // rbEsurience
             // 
@@ -329,6 +346,7 @@
             this.rbEsurience.Text = "King Esurience";
             this.rbEsurience.UseVisualStyleBackColor = true;
             this.rbEsurience.CheckedChanged += new System.EventHandler(this.rbInvestor_CheckedChanged);
+            this.rbEsurience.Click += new System.EventHandler(this.rbInvestor_CheckedChanged);
             // 
             // rbCupidity
             // 
@@ -342,6 +360,7 @@
             this.rbCupidity.Text = "Queen Cupidity";
             this.rbCupidity.UseVisualStyleBackColor = true;
             this.rbCupidity.CheckedChanged += new System.EventHandler(this.rbInvestor_CheckedChanged);
+            this.rbCupidity.Click += new System.EventHandler(this.rbInvestor_CheckedChanged);
             // 
             // pbCTreasureChest
             // 
@@ -366,28 +385,7 @@
             this.rbRapacity.Text = "King Rapacity";
             this.rbRapacity.UseVisualStyleBackColor = true;
             this.rbRapacity.CheckedChanged += new System.EventHandler(this.rbInvestor_CheckedChanged);
-            // 
-            // tbInstructions
-            // 
-            this.tbInstructions.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbInstructions.Font = new System.Drawing.Font("Old English Text MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbInstructions.Location = new System.Drawing.Point(412, 54);
-            this.tbInstructions.Multiline = true;
-            this.tbInstructions.Name = "tbInstructions";
-            this.tbInstructions.Size = new System.Drawing.Size(419, 581);
-            this.tbInstructions.TabIndex = 81;
-            this.tbInstructions.Text = resources.GetString("tbInstructions.Text");
-            // 
-            // btnPlay
-            // 
-            this.btnPlay.Font = new System.Drawing.Font("Old English Text MT", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlay.Location = new System.Drawing.Point(643, 546);
-            this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(138, 64);
-            this.btnPlay.TabIndex = 92;
-            this.btnPlay.Text = "Begin";
-            this.btnPlay.UseVisualStyleBackColor = true;
-            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
+            this.rbRapacity.Click += new System.EventHandler(this.rbInvestor_CheckedChanged);
             // 
             // pictureBox7
             // 
@@ -435,7 +433,7 @@
             this.txtRapacity.Font = new System.Drawing.Font("Old English Text MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRapacity.Location = new System.Drawing.Point(412, 613);
             this.txtRapacity.Name = "txtRapacity";
-            this.txtRapacity.Size = new System.Drawing.Size(438, 24);
+            this.txtRapacity.Size = new System.Drawing.Size(469, 24);
             this.txtRapacity.TabIndex = 89;
             // 
             // pictureBox5
@@ -464,7 +462,7 @@
             this.txtCupidity.Font = new System.Drawing.Font("Old English Text MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCupidity.Location = new System.Drawing.Point(412, 389);
             this.txtCupidity.Name = "txtCupidity";
-            this.txtCupidity.Size = new System.Drawing.Size(438, 24);
+            this.txtCupidity.Size = new System.Drawing.Size(483, 24);
             this.txtCupidity.TabIndex = 90;
             // 
             // txtEsurience
@@ -473,7 +471,7 @@
             this.txtEsurience.Font = new System.Drawing.Font("Old English Text MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEsurience.Location = new System.Drawing.Point(412, 176);
             this.txtEsurience.Name = "txtEsurience";
-            this.txtEsurience.Size = new System.Drawing.Size(438, 24);
+            this.txtEsurience.Size = new System.Drawing.Size(469, 24);
             this.txtEsurience.TabIndex = 88;
             // 
             // gbinvest
@@ -507,6 +505,7 @@
             // 
             // nudPirate
             // 
+            this.nudPirate.BackColor = System.Drawing.Color.CornflowerBlue;
             this.nudPirate.Font = new System.Drawing.Font("Old English Text MT", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudPirate.Location = new System.Drawing.Point(149, 295);
             this.nudPirate.Maximum = new decimal(new int[] {
@@ -531,13 +530,14 @@
             // 
             // btnLoadShips
             // 
+            this.btnLoadShips.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnLoadShips.Font = new System.Drawing.Font("Old English Text MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoadShips.Location = new System.Drawing.Point(87, 492);
             this.btnLoadShips.Name = "btnLoadShips";
             this.btnLoadShips.Size = new System.Drawing.Size(138, 50);
             this.btnLoadShips.TabIndex = 40;
             this.btnLoadShips.Text = "Load Ships";
-            this.btnLoadShips.UseVisualStyleBackColor = true;
+            this.btnLoadShips.UseVisualStyleBackColor = false;
             this.btnLoadShips.Visible = false;
             this.btnLoadShips.Click += new System.EventHandler(this.btnLoadShips_Click);
             // 
@@ -573,18 +573,20 @@
             // 
             // btnInvest
             // 
+            this.btnInvest.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnInvest.Font = new System.Drawing.Font("Old English Text MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInvest.Location = new System.Drawing.Point(87, 351);
             this.btnInvest.Name = "btnInvest";
             this.btnInvest.Size = new System.Drawing.Size(138, 63);
             this.btnInvest.TabIndex = 72;
             this.btnInvest.Text = "Invest";
-            this.btnInvest.UseVisualStyleBackColor = true;
+            this.btnInvest.UseVisualStyleBackColor = false;
             this.btnInvest.Visible = false;
             this.btnInvest.Click += new System.EventHandler(this.btnInvest_Click);
             // 
             // nudInvestment
             // 
+            this.nudInvestment.BackColor = System.Drawing.Color.CornflowerBlue;
             this.nudInvestment.Font = new System.Drawing.Font("Old English Text MT", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudInvestment.Increment = new decimal(new int[] {
             5,
@@ -690,13 +692,6 @@
             this.flpYellowBelly.Size = new System.Drawing.Size(243, 78);
             this.flpYellowBelly.TabIndex = 86;
             // 
-            // flpGreenThumb
-            // 
-            this.flpGreenThumb.Location = new System.Drawing.Point(761, 235);
-            this.flpGreenThumb.Name = "flpGreenThumb";
-            this.flpGreenThumb.Size = new System.Drawing.Size(243, 78);
-            this.flpGreenThumb.TabIndex = 87;
-            // 
             // flpBluebeard
             // 
             this.flpBluebeard.Controls.Add(this.pictureBox9);
@@ -723,6 +718,28 @@
             this.pbRapacity.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbRapacity.TabIndex = 79;
             this.pbRapacity.TabStop = false;
+            // 
+            // pbETreasureChest
+            // 
+            this.pbETreasureChest.Image = global::TreasureHunt2.Properties.Resources.chest_with_moths;
+            this.pbETreasureChest.Location = new System.Drawing.Point(412, 53);
+            this.pbETreasureChest.Name = "pbETreasureChest";
+            this.pbETreasureChest.Size = new System.Drawing.Size(136, 126);
+            this.pbETreasureChest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbETreasureChest.TabIndex = 100;
+            this.pbETreasureChest.TabStop = false;
+            this.pbETreasureChest.Visible = false;
+            // 
+            // pbRTreasureChest
+            // 
+            this.pbRTreasureChest.Image = global::TreasureHunt2.Properties.Resources.chest_with_moths;
+            this.pbRTreasureChest.Location = new System.Drawing.Point(412, 489);
+            this.pbRTreasureChest.Name = "pbRTreasureChest";
+            this.pbRTreasureChest.Size = new System.Drawing.Size(136, 126);
+            this.pbRTreasureChest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbRTreasureChest.TabIndex = 102;
+            this.pbRTreasureChest.TabStop = false;
+            this.pbRTreasureChest.Visible = false;
             // 
             // Form1
             // 
@@ -760,8 +777,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbIsland)).EndInit();
             this.gbBackers.ResumeLayout(false);
             this.gbBackers.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRTreasureChest)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbETreasureChest)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCTreasureChest)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -778,6 +793,8 @@
             this.flpBluebeard.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRapacity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbETreasureChest)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRTreasureChest)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -825,7 +842,6 @@
         private System.Windows.Forms.FlowLayoutPanel flpRedCoat;
         private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.FlowLayoutPanel flpYellowBelly;
-        private System.Windows.Forms.FlowLayoutPanel flpGreenThumb;
         private System.Windows.Forms.FlowLayoutPanel flpBluebeard;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pbRapacity;
@@ -838,6 +854,7 @@
         private System.Windows.Forms.PictureBox pbETreasureChest;
         private System.Windows.Forms.PictureBox pbRTreasureChest;
         private System.Windows.Forms.PictureBox pbCTreasureChest;
+        private System.Windows.Forms.Button btnGameOver;
     }
 }
 

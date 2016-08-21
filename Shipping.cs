@@ -46,7 +46,9 @@ namespace TreasureHunt2
     public interface IShipping
     {
         void SetSail();
-        void FindTreasure();
+
+        ////commented out this code on forms page and so had to comment it out here too
+       // void FindTreasure();
     }
 
 }
