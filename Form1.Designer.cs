@@ -45,6 +45,11 @@
             this.pbGreen = new System.Windows.Forms.PictureBox();
             this.pbIsland = new System.Windows.Forms.PictureBox();
             this.gbBackers = new System.Windows.Forms.GroupBox();
+            this.lblYB = new System.Windows.Forms.Label();
+            this.gbPiratelabels = new System.Windows.Forms.GroupBox();
+            this.lblBB = new System.Windows.Forms.Label();
+            this.lblRC = new System.Windows.Forms.Label();
+            this.lblGT = new System.Windows.Forms.Label();
             this.btnGameOver = new System.Windows.Forms.Button();
             this.btnPlay = new System.Windows.Forms.Button();
             this.tbInstructions = new System.Windows.Forms.TextBox();
@@ -75,11 +80,6 @@
             this.lblGreenThumb = new System.Windows.Forms.Label();
             this.lblRedCoat = new System.Windows.Forms.Label();
             this.lblBluebeard = new System.Windows.Forms.Label();
-            this.flpRedCoat = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.flpYellowBelly = new System.Windows.Forms.FlowLayoutPanel();
-            this.flpBluebeard = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pbRapacity = new System.Windows.Forms.PictureBox();
             this.pbETreasureChest = new System.Windows.Forms.PictureBox();
             this.pbRTreasureChest = new System.Windows.Forms.PictureBox();
@@ -94,6 +94,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbGreen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbIsland)).BeginInit();
             this.gbBackers.SuspendLayout();
+            this.gbPiratelabels.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCTreasureChest)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -104,10 +105,6 @@
             this.gbinvest.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPirate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudInvestment)).BeginInit();
-            this.flpRedCoat.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            this.flpBluebeard.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRapacity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbETreasureChest)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRTreasureChest)).BeginInit();
@@ -265,6 +262,7 @@
             // gbBackers
             // 
             this.gbBackers.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.gbBackers.Controls.Add(this.gbPiratelabels);
             this.gbBackers.Controls.Add(this.btnGameOver);
             this.gbBackers.Controls.Add(this.btnPlay);
             this.gbBackers.Controls.Add(this.tbInstructions);
@@ -286,9 +284,6 @@
             this.gbBackers.Controls.Add(this.lblGreenThumb);
             this.gbBackers.Controls.Add(this.lblRedCoat);
             this.gbBackers.Controls.Add(this.lblBluebeard);
-            this.gbBackers.Controls.Add(this.flpRedCoat);
-            this.gbBackers.Controls.Add(this.flpYellowBelly);
-            this.gbBackers.Controls.Add(this.flpBluebeard);
             this.gbBackers.Controls.Add(this.pbRapacity);
             this.gbBackers.Controls.Add(this.pbETreasureChest);
             this.gbBackers.Controls.Add(this.pbRTreasureChest);
@@ -297,6 +292,59 @@
             this.gbBackers.Size = new System.Drawing.Size(1257, 724);
             this.gbBackers.TabIndex = 41;
             this.gbBackers.TabStop = false;
+            // 
+            // lblYB
+            // 
+            this.lblYB.AutoSize = true;
+            this.lblYB.Font = new System.Drawing.Font("Old English Text MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYB.Location = new System.Drawing.Point(3, 583);
+            this.lblYB.Name = "lblYB";
+            this.lblYB.Size = new System.Drawing.Size(156, 23);
+            this.lblYB.TabIndex = 106;
+            this.lblYB.Text = "Cmdr. YellowBelly";
+            // 
+            // gbPiratelabels
+            // 
+            this.gbPiratelabels.Controls.Add(this.lblYB);
+            this.gbPiratelabels.Controls.Add(this.lblBB);
+            this.gbPiratelabels.Controls.Add(this.lblRC);
+            this.gbPiratelabels.Controls.Add(this.lblGT);
+            this.gbPiratelabels.Location = new System.Drawing.Point(1054, 4);
+            this.gbPiratelabels.Name = "gbPiratelabels";
+            this.gbPiratelabels.Size = new System.Drawing.Size(232, 720);
+            this.gbPiratelabels.TabIndex = 108;
+            this.gbPiratelabels.TabStop = false;
+            this.gbPiratelabels.Visible = false;
+            // 
+            // lblBB
+            // 
+            this.lblBB.AutoSize = true;
+            this.lblBB.Font = new System.Drawing.Font("Old English Text MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBB.Location = new System.Drawing.Point(3, 62);
+            this.lblBB.Name = "lblBB";
+            this.lblBB.Size = new System.Drawing.Size(130, 23);
+            this.lblBB.TabIndex = 107;
+            this.lblBB.Text = "Capt. Bluebeard";
+            // 
+            // lblRC
+            // 
+            this.lblRC.AutoSize = true;
+            this.lblRC.Font = new System.Drawing.Font("Old English Text MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRC.Location = new System.Drawing.Point(4, 230);
+            this.lblRC.Name = "lblRC";
+            this.lblRC.Size = new System.Drawing.Size(128, 23);
+            this.lblRC.TabIndex = 104;
+            this.lblRC.Text = "Cmdr. RedCoat";
+            // 
+            // lblGT
+            // 
+            this.lblGT.AutoSize = true;
+            this.lblGT.Font = new System.Drawing.Font("Old English Text MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGT.Location = new System.Drawing.Point(2, 406);
+            this.lblGT.Name = "lblGT";
+            this.lblGT.Size = new System.Drawing.Size(153, 23);
+            this.lblGT.TabIndex = 105;
+            this.lblGT.Text = "Capt. GreenThumb";
             // 
             // btnGameOver
             // 
@@ -315,7 +363,7 @@
             // 
             this.btnPlay.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnPlay.Font = new System.Drawing.Font("Old English Text MT", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlay.Location = new System.Drawing.Point(635, 546);
+            this.btnPlay.Location = new System.Drawing.Point(628, 546);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(138, 64);
             this.btnPlay.TabIndex = 92;
@@ -390,7 +438,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::TreasureHunt2.Properties.Resources.BlueBeard;
-            this.pictureBox7.Location = new System.Drawing.Point(1004, 12);
+            this.pictureBox7.Location = new System.Drawing.Point(962, 12);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(92, 126);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -400,7 +448,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::TreasureHunt2.Properties.Resources.GreenThmb;
-            this.pictureBox6.Location = new System.Drawing.Point(1004, 365);
+            this.pictureBox6.Location = new System.Drawing.Point(962, 365);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(92, 125);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -439,7 +487,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::TreasureHunt2.Properties.Resources.Capt__Redcoat;
-            this.pictureBox5.Location = new System.Drawing.Point(1004, 188);
+            this.pictureBox5.Location = new System.Drawing.Point(962, 188);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(92, 125);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -449,7 +497,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::TreasureHunt2.Properties.Resources.YellowBellyedit;
-            this.pictureBox3.Location = new System.Drawing.Point(1004, 546);
+            this.pictureBox3.Location = new System.Drawing.Point(962, 546);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(92, 125);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -487,7 +535,7 @@
             this.gbinvest.Controls.Add(this.tbResults);
             this.gbinvest.Location = new System.Drawing.Point(9, 2);
             this.gbinvest.Name = "gbinvest";
-            this.gbinvest.Size = new System.Drawing.Size(288, 588);
+            this.gbinvest.Size = new System.Drawing.Size(288, 722);
             this.gbinvest.TabIndex = 99;
             this.gbinvest.TabStop = false;
             this.gbinvest.Visible = false;
@@ -632,7 +680,7 @@
             // 
             this.lblYellowBelly.AutoSize = true;
             this.lblYellowBelly.Font = new System.Drawing.Font("Old English Text MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYellowBelly.Location = new System.Drawing.Point(974, 549);
+            this.lblYellowBelly.Location = new System.Drawing.Point(932, 549);
             this.lblYellowBelly.Name = "lblYellowBelly";
             this.lblYellowBelly.Size = new System.Drawing.Size(29, 32);
             this.lblYellowBelly.TabIndex = 96;
@@ -642,7 +690,7 @@
             // 
             this.lblGreenThumb.AutoSize = true;
             this.lblGreenThumb.Font = new System.Drawing.Font("Old English Text MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGreenThumb.Location = new System.Drawing.Point(972, 367);
+            this.lblGreenThumb.Location = new System.Drawing.Point(930, 367);
             this.lblGreenThumb.Name = "lblGreenThumb";
             this.lblGreenThumb.Size = new System.Drawing.Size(29, 32);
             this.lblGreenThumb.TabIndex = 95;
@@ -652,7 +700,7 @@
             // 
             this.lblRedCoat.AutoSize = true;
             this.lblRedCoat.Font = new System.Drawing.Font("Old English Text MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRedCoat.Location = new System.Drawing.Point(973, 191);
+            this.lblRedCoat.Location = new System.Drawing.Point(931, 191);
             this.lblRedCoat.Name = "lblRedCoat";
             this.lblRedCoat.Size = new System.Drawing.Size(29, 32);
             this.lblRedCoat.TabIndex = 94;
@@ -662,52 +710,11 @@
             // 
             this.lblBluebeard.AutoSize = true;
             this.lblBluebeard.Font = new System.Drawing.Font("Old English Text MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBluebeard.Location = new System.Drawing.Point(974, 12);
+            this.lblBluebeard.Location = new System.Drawing.Point(932, 16);
             this.lblBluebeard.Name = "lblBluebeard";
             this.lblBluebeard.Size = new System.Drawing.Size(29, 32);
             this.lblBluebeard.TabIndex = 93;
             this.lblBluebeard.Text = "1";
-            // 
-            // flpRedCoat
-            // 
-            this.flpRedCoat.Controls.Add(this.pictureBox19);
-            this.flpRedCoat.Location = new System.Drawing.Point(761, 412);
-            this.flpRedCoat.Name = "flpRedCoat";
-            this.flpRedCoat.Size = new System.Drawing.Size(243, 78);
-            this.flpRedCoat.TabIndex = 85;
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(70, 62);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox19.TabIndex = 39;
-            this.pictureBox19.TabStop = false;
-            // 
-            // flpYellowBelly
-            // 
-            this.flpYellowBelly.Location = new System.Drawing.Point(761, 591);
-            this.flpYellowBelly.Name = "flpYellowBelly";
-            this.flpYellowBelly.Size = new System.Drawing.Size(243, 78);
-            this.flpYellowBelly.TabIndex = 86;
-            // 
-            // flpBluebeard
-            // 
-            this.flpBluebeard.Controls.Add(this.pictureBox9);
-            this.flpBluebeard.Location = new System.Drawing.Point(759, 60);
-            this.flpBluebeard.Name = "flpBluebeard";
-            this.flpBluebeard.Size = new System.Drawing.Size(243, 78);
-            this.flpBluebeard.TabIndex = 91;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(70, 62);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 32;
-            this.pictureBox9.TabStop = false;
             // 
             // pbRapacity
             // 
@@ -777,6 +784,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbIsland)).EndInit();
             this.gbBackers.ResumeLayout(false);
             this.gbBackers.PerformLayout();
+            this.gbPiratelabels.ResumeLayout(false);
+            this.gbPiratelabels.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCTreasureChest)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -788,10 +797,6 @@
             this.gbinvest.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPirate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudInvestment)).EndInit();
-            this.flpRedCoat.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            this.flpBluebeard.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRapacity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbETreasureChest)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRTreasureChest)).EndInit();
@@ -839,11 +844,6 @@
         private System.Windows.Forms.Label lblGreenThumb;
         private System.Windows.Forms.Label lblRedCoat;
         private System.Windows.Forms.Label lblBluebeard;
-        private System.Windows.Forms.FlowLayoutPanel flpRedCoat;
-        private System.Windows.Forms.PictureBox pictureBox19;
-        private System.Windows.Forms.FlowLayoutPanel flpYellowBelly;
-        private System.Windows.Forms.FlowLayoutPanel flpBluebeard;
-        private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pbRapacity;
         private System.Windows.Forms.TextBox tbInstructions;
         private System.Windows.Forms.RadioButton rbRapacity;
@@ -855,6 +855,11 @@
         private System.Windows.Forms.PictureBox pbRTreasureChest;
         private System.Windows.Forms.PictureBox pbCTreasureChest;
         private System.Windows.Forms.Button btnGameOver;
+        private System.Windows.Forms.Label lblBB;
+        private System.Windows.Forms.Label lblYB;
+        private System.Windows.Forms.Label lblGT;
+        private System.Windows.Forms.Label lblRC;
+        private System.Windows.Forms.GroupBox gbPiratelabels;
     }
 }
 

@@ -75,6 +75,7 @@ namespace TreasureHunt2
             btnInvest.Visible = true;
             btnPlay.Visible = false;
             btnGameOver.Visible = false;
+            gbPiratelabels.Visible = true;
         }
 
      
@@ -165,7 +166,7 @@ namespace TreasureHunt2
                 Ship[i].PiratePathCounter = 0;
                 Ship[i].HasFinished = false;
             }
-           
+            Text = "";
         }
 
         private void btnSetSail_Click(object sender, EventArgs e)
@@ -204,7 +205,7 @@ namespace TreasureHunt2
                     //Make it run
                     Application.DoEvents();
                     //Slow down a bit
-                    System.Threading.Thread.Sleep(10);
+                    System.Threading.Thread.Sleep(100);
                     //split the path array for each ship into left [0] and top [1] points
 
                     string path = Ship[i].ShipPath[Ship[i].PathCounter];
@@ -360,6 +361,7 @@ namespace TreasureHunt2
             SetSovereigns();
             btnGameOver.Visible = false;
             tbInstructions.Visible = true;
+            gbPiratelabels.Visible = false;
             btnPlay.Visible = true;
                 pbETreasureChest.Visible = false;
             pbCTreasureChest.Visible = false;
@@ -377,6 +379,8 @@ namespace TreasureHunt2
             rbEsurience.Enabled = true;
             rbCupidity.Enabled = true;
         }
+
+       
         // ===========================================================================================//
         //                UNUSED CODE
 
@@ -439,7 +443,7 @@ namespace TreasureHunt2
 
         //}
 
-     
+
 
         //private void gbinvest_Enter(object sender, EventArgs e)
         //{
