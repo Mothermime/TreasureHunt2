@@ -9,6 +9,7 @@ namespace TreasureHunt2
    
         public static class Factory
         {
+        // a 'class of classes'  to provide a means by which all of the relevant classes can be used in the code for the same purpose without writing screeds of code
             public static int BackerNumber;
             public static Sovereigns ChooseSovereign(string SovereignID)
             {

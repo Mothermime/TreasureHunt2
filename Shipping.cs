@@ -8,7 +8,7 @@ using System.Windows.Forms;
 namespace TreasureHunt2
 {
     public abstract class Shipping
-    {
+    {// list all the different properties that are common to the four ships
         public string Name { get; set; }
         public string PirateName { get; set; }
         
@@ -45,6 +45,7 @@ namespace TreasureHunt2
     }
     public interface IShipping
     {
+        // the same method to be applied to all ships but with different characteristics i.e. diff paths
         void SetSail();
 
         ////commented out this code on forms page and so had to comment it out here too

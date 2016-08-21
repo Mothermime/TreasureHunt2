@@ -8,7 +8,8 @@ namespace TreasureHunt2
 {
            class Ruby : Shipping, IShipping
         {
-            public override List<string> PiratePath { get; set; }
+        //specify details
+        public override List<string> PiratePath { get; set; }
 
 
             public override List<string> ShipPath { get; set; }
@@ -27,7 +28,8 @@ namespace TreasureHunt2
             private List<string> Rubysail()
 
             {
-                List<string> ShipPath = new List<string>();
+            // all the different points the ships pass through to make the path (and the pirates below)
+            List<string> ShipPath = new List<string>();
 
                 ShipPath.Add("1217, 676");
                 ShipPath.Add("1190,628");

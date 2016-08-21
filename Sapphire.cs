@@ -8,8 +8,7 @@ namespace TreasureHunt2
 {
     class Sapphire : Shipping, IShipping
     {
-
-
+        //specify details
 
         public override List<string> ShipPath { get; set; }
         public override List<string> PiratePath { get; set; }
@@ -32,6 +31,7 @@ namespace TreasureHunt2
         public List<string> SapphireSail()
 
         {
+            // all the different points the ships pass through to make the path (and the pirates below)
             List<string> ShipPath = new List<string>();
 
             ShipPath.Add("1217, 0");

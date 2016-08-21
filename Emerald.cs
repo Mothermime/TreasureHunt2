@@ -8,7 +8,8 @@ namespace TreasureHunt2
 {
    class Emerald : Shipping, IShipping
         {
-            public void SetSail()
+        //specify details
+        public void SetSail()
             { }
             public override List<string> ShipPath { get; set; }
 
@@ -23,8 +24,9 @@ namespace TreasureHunt2
             }
             private List<string> Emeraldsail()
 
-            {
-                List<string> ShipPath = new List<string>();
+        {
+            // all the different points the ships pass through to make the path (and the pirates below)
+            List<string> ShipPath = new List<string>();
 
                 ShipPath.Add("0,676");
                 ShipPath.Add("40,673");

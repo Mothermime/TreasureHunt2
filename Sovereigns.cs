@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace TreasureHunt2
 {
-
+    //All the properties needed for the different sovereigns
   
         public abstract class Sovereigns
         {
@@ -21,7 +21,7 @@ namespace TreasureHunt2
             public RadioButton rbPirate = null;
            
         }
-
+    //  Assign chatacteristcs to each 
         class Esurience : Sovereigns
         {
             public Esurience()
