@@ -45,8 +45,8 @@
             this.pbGreen = new System.Windows.Forms.PictureBox();
             this.pbIsland = new System.Windows.Forms.PictureBox();
             this.gbBackers = new System.Windows.Forms.GroupBox();
-            this.lblYB = new System.Windows.Forms.Label();
             this.gbPiratelabels = new System.Windows.Forms.GroupBox();
+            this.lblYB = new System.Windows.Forms.Label();
             this.lblBB = new System.Windows.Forms.Label();
             this.lblRC = new System.Windows.Forms.Label();
             this.lblGT = new System.Windows.Forms.Label();
@@ -150,7 +150,7 @@
             // 
             // pbBlue
             // 
-            this.pbBlue.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.pbBlue.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pbBlue.Image = global::TreasureHunt2.Properties.Resources.Pirate_ship_blue_edit;
             this.pbBlue.Location = new System.Drawing.Point(1216, -1);
             this.pbBlue.Name = "pbBlue";
@@ -161,7 +161,7 @@
             // 
             // pbRed
             // 
-            this.pbRed.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.pbRed.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pbRed.Image = global::TreasureHunt2.Properties.Resources.red_edit;
             this.pbRed.Location = new System.Drawing.Point(1216, 675);
             this.pbRed.Name = "pbRed";
@@ -172,7 +172,7 @@
             // 
             // pbYellow
             // 
-            this.pbYellow.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.pbYellow.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pbYellow.Image = global::TreasureHunt2.Properties.Resources.yellow_edit_41;
             this.pbYellow.Location = new System.Drawing.Point(-1, -1);
             this.pbYellow.Name = "pbYellow";
@@ -194,6 +194,7 @@
             // 
             // pbBluebeard
             // 
+            this.pbBluebeard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbBluebeard.Image = global::TreasureHunt2.Properties.Resources.Bluebeard_2;
             this.pbBluebeard.Location = new System.Drawing.Point(743, 335);
             this.pbBluebeard.Name = "pbBluebeard";
@@ -205,6 +206,7 @@
             // 
             // pbRedCoat
             // 
+            this.pbRedCoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbRedCoat.Image = global::TreasureHunt2.Properties.Resources.Redcoat_2;
             this.pbRedCoat.Location = new System.Drawing.Point(710, 462);
             this.pbRedCoat.Name = "pbRedCoat";
@@ -216,17 +218,19 @@
             // 
             // pbGreenThumb
             // 
+            this.pbGreenThumb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbGreenThumb.Image = global::TreasureHunt2.Properties.Resources.Green_Thiumb_2;
             this.pbGreenThumb.Location = new System.Drawing.Point(654, 436);
             this.pbGreenThumb.Name = "pbGreenThumb";
-            this.pbGreenThumb.Size = new System.Drawing.Size(16, 27);
-            this.pbGreenThumb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbGreenThumb.Size = new System.Drawing.Size(14, 27);
+            this.pbGreenThumb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbGreenThumb.TabIndex = 34;
             this.pbGreenThumb.TabStop = false;
             this.pbGreenThumb.Visible = false;
             // 
             // pbYellowBelly
             // 
+            this.pbYellowBelly.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbYellowBelly.Image = global::TreasureHunt2.Properties.Resources.Yellow_Belly_2;
             this.pbYellowBelly.Location = new System.Drawing.Point(548, 262);
             this.pbYellowBelly.Name = "pbYellowBelly";
@@ -238,7 +242,7 @@
             // 
             // pbGreen
             // 
-            this.pbGreen.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.pbGreen.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pbGreen.Image = global::TreasureHunt2.Properties.Resources.Pirate_ship_green_edit;
             this.pbGreen.Location = new System.Drawing.Point(-1, 675);
             this.pbGreen.Name = "pbGreen";
@@ -287,21 +291,11 @@
             this.gbBackers.Controls.Add(this.pbRapacity);
             this.gbBackers.Controls.Add(this.pbETreasureChest);
             this.gbBackers.Controls.Add(this.pbRTreasureChest);
-            this.gbBackers.Location = new System.Drawing.Point(4, 1);
+            this.gbBackers.Location = new System.Drawing.Point(1, 1);
             this.gbBackers.Name = "gbBackers";
             this.gbBackers.Size = new System.Drawing.Size(1257, 724);
             this.gbBackers.TabIndex = 41;
             this.gbBackers.TabStop = false;
-            // 
-            // lblYB
-            // 
-            this.lblYB.AutoSize = true;
-            this.lblYB.Font = new System.Drawing.Font("Old English Text MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYB.Location = new System.Drawing.Point(3, 583);
-            this.lblYB.Name = "lblYB";
-            this.lblYB.Size = new System.Drawing.Size(156, 23);
-            this.lblYB.TabIndex = 106;
-            this.lblYB.Text = "Cmdr. YellowBelly";
             // 
             // gbPiratelabels
             // 
@@ -315,6 +309,16 @@
             this.gbPiratelabels.TabIndex = 108;
             this.gbPiratelabels.TabStop = false;
             this.gbPiratelabels.Visible = false;
+            // 
+            // lblYB
+            // 
+            this.lblYB.AutoSize = true;
+            this.lblYB.Font = new System.Drawing.Font("Old English Text MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYB.Location = new System.Drawing.Point(3, 583);
+            this.lblYB.Name = "lblYB";
+            this.lblYB.Size = new System.Drawing.Size(156, 23);
+            this.lblYB.TabIndex = 106;
+            this.lblYB.Text = "Cmdr. YellowBelly";
             // 
             // lblBB
             // 
