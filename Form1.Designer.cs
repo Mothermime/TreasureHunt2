@@ -760,6 +760,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1261, 725);
             this.Controls.Add(this.gbBackers);
+            this.Controls.Add(this.pbRedCoat);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.tbWinner);
             this.Controls.Add(this.pbBluebeard);
@@ -769,7 +770,6 @@
             this.Controls.Add(this.pbRed);
             this.Controls.Add(this.pbYellow);
             this.Controls.Add(this.btnSetSail);
-            this.Controls.Add(this.pbRedCoat);
             this.Controls.Add(this.pbGreenThumb);
             this.Controls.Add(this.pbGreen);
             this.Controls.Add(this.pbIsland);

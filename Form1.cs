@@ -205,7 +205,7 @@ namespace TreasureHunt2
                     //Make it run
                     Application.DoEvents();
                     //Slow down a bit
-                    System.Threading.Thread.Sleep(100);
+                    System.Threading.Thread.Sleep(10);
                     //split the path array for each ship into left [0] and top [1] points
 
                     string path = Ship[i].ShipPath[Ship[i].PathCounter];
@@ -280,6 +280,7 @@ namespace TreasureHunt2
         }
         private void btnReturn_Click(object sender, EventArgs e)
         {
+            rbInvestor.Checked = false;
             //bring back the view for investing and set it for rerun
             gbBackers.Visible = true;
             lblGoldHoard.Text = " ";
